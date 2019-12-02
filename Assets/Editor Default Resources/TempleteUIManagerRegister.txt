@@ -1,0 +1,21 @@
+/**
+ * Code Generator
+ *
+ * Created on {Date}
+ */
+
+using UIFramework;
+
+namespace Game.Generator.UI
+{
+    public static partial class UIManagerRegister
+    {
+        /// <summary>
+        /// 注册UI的AB路径
+        /// </summary>
+        public static void RegisterUIAB()
+        {
+{Register}
+        }
+    }
+}

@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 1077934926
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: ui/ui_windows
+      Dependencies: {}
+    Info_1:
+      Name: ui/uialertcontainer
+      Dependencies: {}

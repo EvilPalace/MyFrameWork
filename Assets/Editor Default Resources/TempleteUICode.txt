@@ -1,0 +1,29 @@
+/**
+ * 代码产生器产生
+ *
+ * Created on {DateHolder}
+ */
+
+
+using System;
+using UIFramework;
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace Game.Generator.UI
+{
+    public partial class {ClassHolder} : {UIObjectHolder}
+    {
+        #region 变量
+
+{VariableHolder}
+
+        #endregion
+        
+        // 初始化
+        protected void Awake()
+        {
+{AssignHolder}
+        }
+    }
+}
