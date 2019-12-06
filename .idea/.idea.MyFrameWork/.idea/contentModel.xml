@@ -13,6 +13,8 @@
       </e>
       <e p="Assets\Game" t="Include">
         <e p="Test.cs" t="Include" />
+        <e p="TestTableView.cs" t="Include" />
+        <e p="TestTableViewItem.cs" t="Include" />
       </e>
       <e p="Assets\Generator" t="Include">
         <e p="UI" t="Include">
@@ -20,6 +22,8 @@
           <e p="Register" t="Include">
             <e p="UIManager.register.cs" t="Include" />
           </e>
+          <e p="TestTableView.cs" t="Include" />
+          <e p="TestTableViewItem.cs" t="Include" />
           <e p="TestUIView.cs" t="Include" />
           <e p="UIAlertContainer.cs" t="Include" />
         </e>
@@ -37,6 +41,10 @@
             <e p="ProjectInitHandle.cs" t="Include" />
           </e>
           <e p="UIFramework" t="Include">
+            <e p="Component" t="Include">
+              <e p="NoDrawcallRect.cs" t="Include" />
+              <e p="TableView.cs" t="Include" />
+            </e>
             <e p="Editor" t="Include">
               <e p="ReadMe.txt" t="Include" />
               <e p="Temp.cs" t="Include" />

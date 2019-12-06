@@ -74,6 +74,7 @@ namespace UIFramework.Editor
                 {
                     register.Append("\t\t\t");
                     register.Append(string.Format(TempleteFunction, item.Key, item.Value));
+                    register.Append("\n");
                 }
 
                 templeteBuilder.Replace(DateHolder, date);

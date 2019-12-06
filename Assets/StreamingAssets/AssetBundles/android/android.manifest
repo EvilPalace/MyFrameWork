@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1077934926
+CRC: 1884914629
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -7,4 +7,10 @@ AssetBundleManifest:
       Dependencies: {}
     Info_1:
       Name: ui/uialertcontainer
+      Dependencies: {}
+    Info_2:
+      Name: ui/test/testtableview
+      Dependencies: {}
+    Info_3:
+      Name: ui/test/testtableviewitem
       Dependencies: {}

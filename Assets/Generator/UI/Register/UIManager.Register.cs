@@ -1,7 +1,7 @@
 /**
  * Code Generator
  *
- * Created on 2019-11-25 20:07:23Z
+ * Created on 2019-12-06 18:21:56Z
  */
 
 using UIFramework;
@@ -16,6 +16,9 @@ namespace Game.Generator.UI
         public static void RegisterUIAB()
         {
 			UIManager.Register<UIAlertContainer>("UI/UIAlertContainer");
+			UIManager.Register<TestTableView>("UI/Test/TestTableView");
+			UIManager.Register<TestTableViewItem>("UI/Test/TestTableViewItem");
+
         }
     }
 }

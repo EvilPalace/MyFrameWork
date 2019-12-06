@@ -24,7 +24,7 @@ namespace Game
 
         private void Start()
         {
-            UIManager.CreateUIView<UIAlertContainer>(UILayer.center);
+            var view = UIManager.CreateUIView<TestTableView>(UILayer.center);
         }
     }
 }

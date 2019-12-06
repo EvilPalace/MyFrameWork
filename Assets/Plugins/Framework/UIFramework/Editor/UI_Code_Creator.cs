@@ -24,7 +24,7 @@ namespace UIFramework.Editor
         private static string Export = "Export";
         private static string TempletePath = "TempleteUICode.txt";
         private static string TempleteVariable = "private {0} {1};";
-        private static string TempleteAssign = "transform.Find(\"{0}\")";
+        private static string TempleteAssign = "{0} = transform.Find(\"{1}\")";
         private static string TempleteGetComponent = ".GetComponent<{0}>()";
 
         private static string DateHolder = "{DateHolder}";
@@ -137,20 +137,26 @@ namespace UIFramework.Editor
             if (go.GetComponent<Image>() != null)
             {
                 varBuilder.Append(string.Format(TempleteVariable, "Image", go.name));
-                assignBuilder.Append(string.Format(TempleteAssign, path));
+                assignBuilder.Append(string.Format(TempleteAssign, go.name, path));
                 assignBuilder.Append(string.Format(TempleteGetComponent, "Image"));
             }
             else if (go.GetComponent<Text>() != null)
             {
                 varBuilder.Append(string.Format(TempleteVariable, "Text", go.name));
-                assignBuilder.Append(string.Format(TempleteAssign, path));
+                assignBuilder.Append(string.Format(TempleteAssign, go.name, path));
                 assignBuilder.Append(string.Format(TempleteGetComponent, "Text"));
             }
             else if (go.GetComponent<Button>() != null)
             {
                 varBuilder.Append(string.Format(TempleteVariable, "Button", go.name));
-                assignBuilder.Append(string.Format(TempleteAssign, path));
+                assignBuilder.Append(string.Format(TempleteAssign, go.name, path));
                 assignBuilder.Append(string.Format(TempleteGetComponent, "Button"));
+            }
+            else if (go.GetComponent<TableView>() != null)
+            {
+                varBuilder.Append(string.Format(TempleteVariable, "TableView", go.name));
+                assignBuilder.Append(string.Format(TempleteAssign, go.name, path));
+                assignBuilder.Append(string.Format(TempleteGetComponent, "TableView"));
             }
             else
             {

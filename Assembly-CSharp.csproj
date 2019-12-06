@@ -76,8 +76,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Game\Test.cs" />
+    <Compile Include="Assets\Game\TestTableView.cs" />
+    <Compile Include="Assets\Game\TestTableViewItem.cs" />
     <Compile Include="Assets\Generator\UI\Image1.cs" />
     <Compile Include="Assets\Generator\UI\Register\UIManager.Register.cs" />
+    <Compile Include="Assets\Generator\UI\TestTableView.cs" />
+    <Compile Include="Assets\Generator\UI\TestTableViewItem.cs" />
     <Compile Include="Assets\Generator\UI\TestUIView.cs" />
     <Compile Include="Assets\Generator\UI\UIAlertContainer.cs" />
     <None Include="Assets\Editor Default Resources\TempleteUIManagerRegister.txt" />

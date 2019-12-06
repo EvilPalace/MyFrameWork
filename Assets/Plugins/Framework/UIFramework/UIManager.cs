@@ -59,6 +59,22 @@ namespace UIFramework
 			return ret;
 		}
 		
+		public static UIItem CreateUIItem(Type type, Transform parent)
+		{
+//			if (!(type is UIItem))
+//				throw new Exception("必须继承语UIItem");
+			var container = UIPrefabDic[type];
+			ABLoader.LoadAB(container);
+			if (container.Bundle == null) throw new NullReferenceException(string.Format("该路径下没有AB包: [{0}]", container.ABName));
+			var prefab = container.Bundle.LoadAsset<GameObject>(type.Name);
+			if (prefab == null) throw new NullReferenceException(string.Format("AB包中没有预制体：[{0}]", type.Name));
+			var itemObj = GameObject.Instantiate<GameObject>(prefab, parent, false);
+			var ret = itemObj.AddComponent(type) as UIItem;
+			UIObjectList.Add(ret);
+			
+			return ret;
+		}
+		
 		private readonly static List<UIObject> UIObjectList = new List<UIObject>(); 
 		public static UI_View CreateUIView<UI_View>(UILayer layer) where UI_View : UIView
 		{

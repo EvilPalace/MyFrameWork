@@ -4,14 +4,16 @@
     <attachedFolders />
     <explicitIncludes>
       <Path>Assets</Path>
-      <Path>Packages</Path>
       <Path>ProjectSettings</Path>
     </explicitIncludes>
     <explicitExcludes>
+      <Path>.git</Path>
       <Path>.idea</Path>
       <Path>Library</Path>
+      <Path>Temp</Path>
       <Path>UnityPackageManager</Path>
       <Path>obj</Path>
+      <Path>新建文件夹</Path>
     </explicitExcludes>
   </component>
 </project>

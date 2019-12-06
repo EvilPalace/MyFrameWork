@@ -77,6 +77,8 @@
   <ItemGroup>
     <Compile Include="Assets\Plugins\Framework\ABLoad\ABContainer.cs" />
     <Compile Include="Assets\Plugins\Framework\ABLoad\ABLoader.cs" />
+    <Compile Include="Assets\Plugins\Framework\UIFramework\Component\NoDrawcallRect.cs" />
+    <Compile Include="Assets\Plugins\Framework\UIFramework\Component\TableView.cs" />
     <Compile Include="Assets\Plugins\Framework\UIFramework\EffectContainer.cs" />
     <Compile Include="Assets\Plugins\Framework\UIFramework\EnumUI.cs" />
     <Compile Include="Assets\Plugins\Framework\UIFramework\UIItem.cs" />
