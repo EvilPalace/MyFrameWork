@@ -16,15 +16,18 @@ namespace Framework.DesignPattern
         {
             get
             {
-                if (instance == null)
+                lock (instance)
                 {
-                    var temp = new GameObject(typeof(T).Name);
-                    instance = temp.AddComponent<T>();
-                    temp.transform.SetParent(instance.GetParent());
-                    if (instance.AutoBegin())
+                    if (instance == null)
                     {
-                        instance.BeginSingleton();
-                    }
+                        var temp = new GameObject(typeof(T).Name);
+                        instance = temp.AddComponent<T>();
+                        temp.transform.SetParent(instance.GetParent());
+                        if (instance.AutoBegin())
+                        {
+                            instance.BeginSingleton();
+                        }
+                    } 
                 }
 
                 return instance;

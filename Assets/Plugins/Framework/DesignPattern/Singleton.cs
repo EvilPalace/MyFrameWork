@@ -16,15 +16,17 @@ namespace Framework.DesignPattern
         {
             get
             {
-                if (instance == null)
+                lock (instance)
                 {
-                    instance = Activator.CreateInstance<T>();
-                    if (instance.AutoBegin())
+                    if (instance == null)
                     {
-                        instance.BeginSingleton();
+                        instance = Activator.CreateInstance<T>();
+                        if (instance.AutoBegin())
+                        {
+                            instance.BeginSingleton();
+                        }
                     }
                 }
-
                 return instance;
             }
         }
