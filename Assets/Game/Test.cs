@@ -6,6 +6,7 @@
 
 using System;
 using ABLoad;
+using Framework.DesignPattern;
 using Game.Generator.UI;
 using UIFramework;
 using UnityEngine;
@@ -24,7 +25,8 @@ namespace Game
 
         private void Start()
         {
-            var view = UIManager.CreateUIView<TestTableView>(UILayer.center);
+            //var view = UIManager.CreateUIView<TestTableView>(UILayer.center);
+
         }
     }
 }

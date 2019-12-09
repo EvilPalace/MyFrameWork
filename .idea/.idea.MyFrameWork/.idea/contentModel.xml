@@ -37,6 +37,10 @@
               <e p="ABCreator.cs" t="Include" />
             </e>
           </e>
+          <e p="DesignPattern" t="Include">
+            <e p="Singleton.cs" t="Include" />
+            <e p="UnitySingleton.cs" t="Include" />
+          </e>
           <e p="Editor" t="Include">
             <e p="ProjectInitHandle.cs" t="Include" />
           </e>
